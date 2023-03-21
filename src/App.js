@@ -56,8 +56,8 @@ export default function Quotable() {
           </blockquote>
         </Card.Body>
         <Card.Footer>
-          <a id="twitter-quote" href={twitterhref}></a>
-          <a id="tumblr-quote" href={tumblrhref}></a>
+          <a id="twitter-quote" title="Tweet this quote!" target="_blank" href={twitterhref}><i className="fa fa-twitter"></i></a>
+          <a id="tumblr-quote" rel="noopener noreferrer" title="Post this quote on tumblr!" target="_blank" href={tumblrhref}><i className="fa fa-tumblr"></i></a>
           <Button variant="primary" onClick={updateQuote} id="new-quote">
             New Quote
           </Button>
